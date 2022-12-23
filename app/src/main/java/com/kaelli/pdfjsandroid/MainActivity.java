@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         pdfView = findViewById(R.id.pdfView);
 
-        pdfView.loadOnlinePDF("https://download.brother.com/welcome/docp000648/cv_pt3600_schn_sig_lad962001.pdf");
+        // pdfView.loadOnlinePDF("https://download.brother.com/welcome/docp000648/cv_pt3600_schn_sig_lad962001.pdf");
+        // 大文件会导致闪退 200M
+//		pdfView.loadLocalPDF("/sdcard/big.pdf");
+		pdfView.loadLocalPDF("/sdcard/Download/DS70000_UserGuide_CN.pdf");
     }
 }
